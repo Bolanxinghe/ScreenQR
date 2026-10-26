@@ -1,0 +1,248 @@
+{
+  "version": "0.10.0-dev",
+  "build_date": "2026-10-25",
+  "platform": "Windows x64",
+  "release_status": "P2 and P3 implemented; current-machine core EXE checks passed; pending items explicitly retained",
+  "sha256_exe": "75c45c6c1fa35053bf6724fe4452b759de1b729c5ca92a85ca40df21459975e3",
+  "source_tests_passed": 398,
+  "source_tests_seconds": 11.122,
+  "P1_baseline_tests_passed": 377,
+  "source_module_sha256": {
+    "screenqr/__init__.py": "113b51ed66baf4a168912880744e61396ac73d7fca1b0bfd29af8c042d66fd0d",
+    "screenqr/app.py": "e7bb870b559ced2c679bb7b1279910193cca54fa551b1beda4a62796702dd1c7",
+    "screenqr/capture.py": "cb7611f07f8100e988a217eaeebd75d3b597f4e0f6a1f91b245e95d8e82ae4ba",
+    "screenqr/confirmation.py": "b1888a95f8389615b4a5335ce2488b6910e89149638a7f4eeb77dfe57e8fea57",
+    "screenqr/controller.py": "85bb9d9b7fdbad11f1c9e199312b470d7afaf54cc392e941aab6cac9726bef53",
+    "screenqr/core.py": "3b3f5368f887ce775789374a4baa2dd6916b9a754f18b9e5b44bc5321712b5dd",
+    "screenqr/decoding.py": "32ce5836402f1dc073968c96598664a5fbc3cd1588b881f6e74f5fb09925bcf9",
+    "screenqr/diagnostics.py": "d6f2771dba5497d84d52b87fd9a3c18156a2ece1e1cdb1c9dc1cf6550199860e",
+    "screenqr/environment.py": "7ae3d15e88bc6303d4ac17137d923a921084fac7f86bf0a7a972b9cb41975a03",
+    "screenqr/evidence.py": "d00b29bfacb7e8c672d586f14a9f86ae8650c2c4f159ae448efe91a80a4b2b7c",
+    "screenqr/frozen_frame.py": "4fa5c9b100de88963a4aac1698cf7052b8f28bd0dada898b584fa3077f555ada",
+    "screenqr/handoff.py": "acf6b11ae26ce368531a737c6c869c4dd666c709972324895cc732520fba51e4",
+    "screenqr/history.py": "a49858446e8d4d4859db888dcebac07a9dbd3f9133dbd88e48f971e056fe84ef",
+    "screenqr/image_io.py": "4cd832d730572ce8852bf35be04457a644896b3ffae115b35a8015d1c8865f6c",
+    "screenqr/image_limits.py": "3b9e0488ba472403c4a3d04dffa095e8187f3175f45b46416fd8b7f3e487693f",
+    "screenqr/native_capture.py": "dd68c4d2dfa6e1f7d52ffc435a249556b0d5f393ccc16997b8b0833b2a874c1f",
+    "screenqr/native_extent.py": "e8ee063c3e25db795c1e3ffb0423f97eb0448a2ebf3237fee9caf695ca038207",
+    "screenqr/native_identity.py": "c53d2ce9427effe24a254911e03f9ea6badd19b81ef40b92282ae4164e760ce4",
+    "screenqr/native_input.py": "9ba00d4f8973b308a3ff43379af9a2c6febb460db023d5143e1898aba82a017b",
+    "screenqr/native_job.py": "205d97b8da53c3202cfca230a8b3e1661289317ea5394d43d4dc7b3a18ef1cf8",
+    "screenqr/native_notice.py": "328aed1c8ec31af5e5d32e25ae2c34d53cd6008f0137b7adacc5494335f7a818",
+    "screenqr/native_port.py": "b2598c39bc8bcb7d77919d1d94ae2531ea3aff7550e248a9304a5d4d6f8f7c00",
+    "screenqr/native_result.py": "90bfe928b7e54b66c6d7823c79eb3219e74d4789d9276c533ea4622a9ce6eff5",
+    "screenqr/native_toolbar.py": "82699264b7e9fd0047683b8a9876cce72269b1fd9a9c9ea4cd937a0ed27c08c2",
+    "screenqr/panels.py": "2603842fdcb045a373f1cfe3871e058a254b4501f9cea4aeb3e6f71765974e98",
+    "screenqr/presentation.py": "594f86c97b3ccfaf4d49f8c2d80dedf0afdb8913a3ce7179a9f507ee76e0a4b9",
+    "screenqr/profiles.py": "12572ad135f29ee6501372b58563164a8aa3383a25dbc1e8ec590750ed8f17aa",
+    "screenqr/stage.py": "6e222ce6817ae9a9144d7c9d0b5fb18a4c6963e37ab69a746e15c82cf08964e8"
+  },
+  "frozen_runtime_module_source_equality": [
+    "screenqr",
+    "screenqr.app",
+    "screenqr.capture",
+    "screenqr.confirmation",
+    "screenqr.controller",
+    "screenqr.core",
+    "screenqr.decoding",
+    "screenqr.diagnostics",
+    "screenqr.environment",
+    "screenqr.frozen_frame",
+    "screenqr.handoff",
+    "screenqr.history",
+    "screenqr.image_io",
+    "screenqr.image_limits",
+    "screenqr.native_capture",
+    "screenqr.native_extent",
+    "screenqr.native_identity",
+    "screenqr.native_input",
+    "screenqr.native_job",
+    "screenqr.native_notice",
+    "screenqr.native_port",
+    "screenqr.native_result",
+    "screenqr.native_toolbar",
+    "screenqr.panels",
+    "screenqr.presentation",
+    "screenqr.profiles",
+    "screenqr.stage"
+  ],
+  "main_source_equality": true,
+  "unused_source_modules_not_bundled": [
+    "screenqr.evidence"
+  ],
+  "frozen_public_image_checks": {
+    "passed": 35,
+    "format_and_size_cases": 32,
+    "linear_barcode_cases": 3,
+    "outside_source_cwd": true,
+    "python_path_removed": true,
+    "payloads_opened": false,
+    "business_proof": false
+  },
+  "profile_configuration_unchanged_from_P1": true,
+  "dependencies_and_licenses": {
+    "unchanged": true,
+    "new_third_party_dependencies": [],
+    "Python": "3.12.10 x64",
+    "Pillow": "12.3.0",
+    "zxing-cpp": "3.1.1",
+    "PyInstaller": "6.22.2",
+    "license": "MIT"
+  },
+  "actual_final_EXE_tests": {
+    "environment_readonly_probe": {
+      "platform": "Windows",
+      "architecture_bits": 64,
+      "screen_captured": false,
+      "input_sent": false,
+      "network_requests": 0,
+      "display": {
+        "virtual": [
+          0,
+          0,
+          3200,
+          2000
+        ],
+        "monitors": [
+          {
+            "rect": [
+              0,
+              0,
+              3200,
+              2000
+            ],
+            "work": [
+              0,
+              0,
+              3200,
+              2000
+            ],
+            "primary": true,
+            "rotation": 0
+          }
+        ],
+        "own_monitor": [
+          0,
+          0,
+          3200,
+          2000
+        ],
+        "dpi": 192,
+        "interactive": true
+      },
+      "wechat_version": [
+        4,
+        1,
+        15,
+        13
+      ],
+      "reason": "matched",
+      "matched_profile": "wechat-4.1.15.13-dpi192-3200x2000",
+      "message": ""
+    },
+    "linear_codes_on_real_screen": {
+      "Code128": "passed",
+      "EAN13": "passed",
+      "Code39": "passed"
+    },
+    "copy": {
+      "final_EXE_button_and_response": "passed",
+      "exact_clipboard_paste_match": "passed on prior candidate; copy implementation unchanged in final"
+    },
+    "multi_choice_web": {
+      "passed": true,
+      "default_selection": null,
+      "A_requests": 0,
+      "prior_candidate_B_requests": 1,
+      "final_EXE_B_request_delta": 1,
+      "preview_and_url_before_open": true,
+      "explicit_button_required": true,
+      "browser_URL_read": "prior candidate exact public URL confirmed by BrowserSkill tab metadata",
+      "browser_body_read": "pending; extension borrow confirmation timed out, user saw no prompt; not retried or bypassed",
+      "browser_test_tabs_closed": "pending user manual closure"
+    },
+    "after_browser_open": {
+      "pause_before_launch": true,
+      "success_state_held_on_changed_blank_frame": true,
+      "space_resumed_scanning": true,
+      "old_source_cannot_automatically_process_new_page": true
+    },
+    "native_wechat": {
+      "public_sample": "official component example mini-program",
+      "dispatch_count": 1,
+      "product_status": "DISPATCHED_UNCONFIRMED",
+      "business_success_claimed": false,
+      "exact_boundary_check": "exact_calibrated_profile_two_quarters_agree",
+      "native_capture_overlay_cleanup": "CONFIRMED_ABSENT",
+      "correct_initial_page_independently_observed": true,
+      "business_content_actions": 0,
+      "business_window_closed": true,
+      "close_evidence": "absent from fresh window inventory after Alt+F4",
+      "messages_sent": 0
+    },
+    "history": {
+      "isolated_test_storage": true,
+      "only_public_samples": true,
+      "real_EXE_write_and_restart_retention": true,
+      "full_text_and_actions": "passed on prior candidate",
+      "final_EXE_history_list_visible": true,
+      "local_clear_and_disable_source_checks": "passed",
+      "manual_disabled_and_empty_file_state": "pending user manual operation",
+      "no_write_after_disabled_real_EXE_scan": "pending",
+      "zero_uploader_or_network_client_in_storage": true,
+      "record_count_limit": 100,
+      "file_size_limit_bytes": 2000000
+    },
+    "small_windows": {
+      "system_scaling": 200,
+      "main_outer_logical_pixels": [
+        423,
+        651
+      ],
+      "history_outer_logical_pixels": [
+        463,
+        651
+      ],
+      "key_controls_visible": true,
+      "not_a_system_resolution_change_test": true
+    },
+    "inline_first_use_help": "observed in final EXE",
+    "F1_updated_help": "code updated; P1 window behavior tested; final EXE content scroll review pending",
+    "clean_exit_with_history_window_open": "passed; final process window absent from fresh inventory"
+  },
+  "safety": {
+    "native_input_budget_ns": 2000000000,
+    "postcommit_readonly_observation_ns": 10000000000,
+    "single_submission": true,
+    "unknown_not_retried": true,
+    "payment_block_retained": true,
+    "native_multiple_codes_block_retained": true,
+    "browser_http_https_only": true,
+    "no_QR_content_or_screen_in_diagnostics": true,
+    "no_messages_or_business_actions": true,
+    "history_not_part_of_portable_package": true,
+    "github_published": false
+  },
+  "unimplemented_optional_features": [
+    "tray residence and global hotkey",
+    "experimental native mode",
+    "online profile update"
+  ],
+  "pending_real_tests": [
+    "other Windows computers and Windows 10",
+    "100%/125%/150% scaling",
+    "multiple monitors, mixed scaling and negative coordinates",
+    "hot plug, resolution changes and sleep/resume",
+    "additional legitimate WeChat business credentials",
+    "P1 corrupt-configuration EXE GUI smoke test",
+    "ordinary-user wording review"
+  ],
+  "desktop_copy": {
+    "status": "verified",
+    "folder": "ScreenQR-0.10.0-dev",
+    "executable": "ScreenQR.exe",
+    "latest_shortcut": "ScreenQR 最新版.lnk",
+    "previous_versions_preserved": true,
+    "same_exe_as_final_real_tests": true
+  }
+}

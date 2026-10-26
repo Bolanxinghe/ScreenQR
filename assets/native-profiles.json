@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "profiles": [
+    {
+      "id": "wechat-4.1.15.13-dpi192-3200x2000",
+      "version": [
+        4,
+        1,
+        15,
+        13
+      ],
+      "dpi": 192,
+      "screen": [
+        0,
+        0,
+        3200,
+        2000
+      ],
+      "executable": "C:\\Program Files\\Tencent\\Weixin\\Weixin.exe",
+      "window_class": "Qt51514QWindowIcon",
+      "title": "Weixin",
+      "border_id": "wechat-4.1.15.13-dpi192-3200x2000-border-v1",
+      "toolbar_id": "original-asymmetric-qr-v2-wechat-4.1.15.13-dpi192",
+      "display_id": "wechat4.1.15.13-dpi192-3200x2000-max-v-minus-1-v1",
+      "toolbar": {
+        "band_height": 160,
+        "width": [
+          1500,
+          1800
+        ],
+        "height": [
+          88,
+          104
+        ],
+        "gap_max": 64,
+        "finder_side": [
+          8,
+          22
+        ],
+        "icon_side": [
+          28,
+          64
+        ],
+        "quiet_pixels": 4,
+        "neutral_max": 20,
+        "dark_max": 176,
+        "light_min": 224
+      },
+      "boundary": {
+        "gray": [
+          119,
+          119,
+          119
+        ],
+        "green": [
+          0,
+          195,
+          117
+        ],
+        "white": [
+          254,
+          254,
+          254
+        ],
+        "outer": 12,
+        "inner": 6,
+        "tangent": 8,
+        "green_run": 6,
+        "guard": 16,
+        "padding": 32
+      },
+      "model": "strict-v1"
+    }
+  ]
+}

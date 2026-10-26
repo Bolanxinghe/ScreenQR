@@ -1,0 +1,52 @@
+name: Windows build
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  windows-x64:
+    runs-on: windows-2022
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12.10'
+          architecture: x64
+      - run: python -m pip install -r requirements-dev.txt
+      - run: ./build.ps1
+        shell: pwsh
+      - name: Create portable download
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Path release | Out-Null
+          Compress-Archive -LiteralPath dist/ScreenQR -DestinationPath release/ScreenQR-Windows-x64.zip
+          $zipHash = (Get-FileHash -LiteralPath release/ScreenQR-Windows-x64.zip -Algorithm SHA256).Hash.ToLowerInvariant()
+          $exeHash = (Get-FileHash -LiteralPath dist/ScreenQR/ScreenQR.exe -Algorithm SHA256).Hash.ToLowerInvariant()
+          @("$zipHash  ScreenQR-Windows-x64.zip", "$exeHash  ScreenQR/ScreenQR.exe") | Set-Content -LiteralPath release/SHA256SUMS.txt -Encoding utf8
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: ScreenQR-Windows-x64
+          path: release/
+          if-no-files-found: error
+          retention-days: 14
+  provenance:
+    needs: windows-x64
+    # 不运行 PR 的代码或 EXE；只证明本仓库受信任分支/标签产生的压缩包。
+    if: github.event_name != 'pull_request' && github.event.repository.private == false && (github.ref_name == github.event.repository.default_branch || startsWith(github.ref, 'refs/tags/'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: read
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: ScreenQR-Windows-x64
+          path: release/
+      - uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-path: release/ScreenQR-Windows-x64.zip
