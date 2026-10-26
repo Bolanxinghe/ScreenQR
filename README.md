@@ -2,7 +2,11 @@
 
 Windows桌面取景扫码工具。普通网页码确认后在默认浏览器打开；微信专用码自动尝试交给本机已登录微信。无需手机或模拟器。
 
-官方仓库：[Bolanxinghe/ScreenQR](https://github.com/Bolanxinghe/ScreenQR)。源码已公开，EXE 发行版正在准备，尚未正式提供下载。普通用户的完整便携包将在 [Releases](https://github.com/Bolanxinghe/ScreenQR/releases) 提供；[自动构建状态](https://github.com/Bolanxinghe/ScreenQR/actions/workflows/windows.yml) 可公开查看。
+官方仓库：[Bolanxinghe/ScreenQR](https://github.com/Bolanxinghe/ScreenQR)。
+
+**Windows 测试版：[下载完整便携包](https://github.com/Bolanxinghe/ScreenQR/releases/download/v0.10.1-rc1/ScreenQR-0.10.1-rc1-Windows-x64.zip) · [版本说明与校验文件](https://github.com/Bolanxinghe/ScreenQR/releases/tag/v0.10.1-rc1)**
+
+完整解压后运行 `ScreenQR/ScreenQR.exe`，无需安装 Python。当前版本未做 Windows 数字签名，可能出现发布者未知或系统拦截，支持范围和未验证事项见下文。[自动构建状态](https://github.com/Bolanxinghe/ScreenQR/actions/workflows/windows.yml) 可公开查看；下载包使用本机实际验收的 EXE，云端产物单独记录。
 
 当前为 **0.10.1-rc1 发布候选版**。保留本机历史记录、常见一维条码、结果按钮和多码点选，补充程序内四页帮助、环境报告和整包校验。微信校准与严格门禁保留；尚未扩展到第二套微信环境。构建事实见 `docs/build-info.json`，真机验收及未测范围见本版验收报告；不同 EXE 的结论不得混用。
 
