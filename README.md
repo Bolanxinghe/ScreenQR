@@ -2,6 +2,8 @@
 
 Windows桌面取景扫码工具。普通网页码确认后在默认浏览器打开；微信专用码自动尝试交给本机已登录微信。无需手机或模拟器。
 
+官方仓库：[Bolanxinghe/ScreenQR](https://github.com/Bolanxinghe/ScreenQR)。源码已公开，EXE 发行版正在准备，尚未正式提供下载。普通用户的完整便携包将在 [Releases](https://github.com/Bolanxinghe/ScreenQR/releases) 提供；[自动构建状态](https://github.com/Bolanxinghe/ScreenQR/actions/workflows/windows.yml) 可公开查看。
+
 当前为 **0.10.1-rc1 发布候选版**。保留本机历史记录、常见一维条码、结果按钮和多码点选，补充程序内四页帮助、环境报告和整包校验。微信校准与严格门禁保留；尚未扩展到第二套微信环境。构建事实见 `docs/build-info.json`，真机验收及未测范围见本版验收报告；不同 EXE 的结论不得混用。
 
 ## 使用
@@ -41,11 +43,13 @@ Windows桌面取景扫码工具。普通网页码确认后在默认浏览器打�
 
 项目不要求购买证书。当前便携版**未签名**；Windows 或企业策略可能提示或阻止运行，开源和校验码都不等于安全认证。先核对可信下载来源、发布页 ZIP 校验码及程序 F1 的实际 EXE 校验码。不要为运行本程序关闭防护或安装自建根证书。
 
-已准备固定官方动作提交的 GitHub Actions 构建和公开仓库 ZIP 来源证明，尚未在 GitHub 运行；本地包没有云端证明。来源证明不代替 Windows 签名。免费签名可在项目正式公开后申请 SignPath Foundation，需审核，不承诺获批。详见[免费分发与签名方案](docs/免费分发与签名方案.md)。
+GitHub Actions 使用固定官方动作提交，执行 Windows 检查、打包、冻结模块与源码比对、整包校验和 ZIP 来源证明。具体运行及证明以 Actions 中对应的提交和文件哈希为准。`.gitattributes` 保留原始文件字节，避免 Windows 检出时自动换行导致源码校验不一致。首次构建的 407 项检查通过，另行字节比对发现了换行变化；修复后的运行单独记录，不倒写首次结论。
+
+云端构建与本机已验收 EXE 分开报告。本机包没有云端构建证明，云端来源证明也不代表完成了本机 GUI 或微信业务验收；两者都不代替 Windows 数字签名。免费签名可申请 SignPath Foundation，需审核，不承诺获批。详见[免费分发与签名方案](docs/免费分发与签名方案.md)。历史文档保留发布前的记录，当前公开及构建状态以本仓库和对应运行记录为准。
 
 目标平台为 Windows 10（2004 起）/11 x64；目前实际本机为 Windows 11、单屏 3200×2000、200%。普通扫码的多屏和常见缩放有坐标保护及检查，但其它真机仍待验证。微信只适配 4.1.15.13 及上述单屏设置，错配会停用微信通道，保留普通扫码。不保证 Windows 7、32 位、ARM64、云电脑、远程桌面或受保护画面。
 
-原创代码MIT；依赖声明见THIRD_PARTY_NOTICES.md。没有包含AndroMeld或微信程序、反编译源码、用户聊天和私人测试码。尚未自行发布GitHub。真正的打开结果、最终EXE检查与未验证项见docs/build-info.json及本版说明。
+原创代码 MIT；依赖声明见 THIRD_PARTY_NOTICES.md。没有包含 AndroMeld 或微信程序、反编译源码、用户聊天和私人测试码。真正的打开结果、对应 EXE 检查与未验证项见 docs/build-info.json 及本版说明；本仓库的公开不扩大已有微信支持范围。
 
 
 
